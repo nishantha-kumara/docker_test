@@ -1,0 +1,9 @@
+version: "3"
+services: 
+    mymongo:
+        image: "mongo" # mongo image pull by docker hub
+        
+    mynode:
+        build: . # root directory Dockerfile
+        ports: 
+            - "8000:8000" #localmachine port and docker port
